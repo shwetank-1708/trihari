@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="flex items-center justify-around">
+      <div className="flex items-center justify-around shadow-md">
         {/* -------------------- LOGO -------------------- */}
         <Image src="/images/logo.png" alt="logo" width={150} height={150} />
 
@@ -88,7 +88,7 @@ const Navbar = () => {
 
       {/* -------------------- MOBILE NAVBAR -------------------- */}
       {showMobileMenu && (
-        <div className="flex flex-col gap-2 items-center justify-center md:hidden py-2 text-sm font-bold bg-white">
+        <div className="flex flex-col gap-2 items-center justify-center md:hidden py-2 text-sm font-bold bg-white shadow-md">
           <Link href="/" onClick={() => setShowMobileMenu(false)}>
             HOME
           </Link>
